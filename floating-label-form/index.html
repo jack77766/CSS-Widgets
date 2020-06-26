@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Label Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- -------------With Javascript---------------     -->
+
+    <h1>Floating Label with Javascript</h1>
+
+    <form class='form1'>
+        <div class='input-container1'>
+            
+            <input class='input1'
+                   id   ='userInput'
+                   type ="text"
+                   name ='username'>
+            <label class='label1 label-norm' id='userLabel' for='username'>Username</label>
+            
+        </div>
+        <div class='input-container1'>
+            
+            <input class='input1'
+                   id   ='passInput'
+                   type ="password"
+                   name ='password'>
+            <label class='label1 label-norm' id='passLabel' for='password'>Password</label>
+        </div>
+    </form>
+    
+
+
+
+<!-- ---------------USING placeholder:shown-------------------     -->
+<!-- -------------doesn't work on IE and edge--------------------- -->
+
+
+    <h1>Floating Label with placeholder:shown</h1>
+    <form class='form2'>
+        <div class='input-container2'>
+            
+            <input class='input2'
+                   type="text"
+                   placeholder=" "
+                   name='username'>
+            
+            <span class='label2'>Username</span>
+        </div>
+        <div class='input-container2'>
+            
+            <input class='input2'
+                   type="password"
+                   placeholder=" "
+                   name='password'>
+            <span class='label2'>Password</span>
+   
+        </div>
+    </form>
+
+
+
+<!-- ------------------USING :valid & :invalid--------------------- -->
+<!-- -------works on all browsers when according webkits called---------------- -->
+<!-- will bug on invalid value that is not empty, like bad email in email input-------- -->
+
+    <h1>Floating Label with :valid & :invalid</h1>
+    <form class='form3'>
+        <div class='input-container3'>
+            <input class='input3'
+                   type="text"
+                   placeholder=""
+                   name='username'
+                   required>
+            <span class='label3'>Username</span>
+        </div>
+
+        <div class='input-container3'>
+            <input class='input3'
+                   type="password"
+                   placeholder=""
+                   name='password'
+                   required>
+            <span class='label3'>Password</span>
+        </div>
+    </form>
+    
+
+<script src="./script.js"></script>
+
+</body>
+</html>

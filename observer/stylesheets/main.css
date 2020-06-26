@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime|Roboto&display=swap');
+
+:root {
+    --font-main: 'Roboto', sans-serif;
+    --font-secondary: 'Courier Prime', monospace;
+}
+
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font-main);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 4rem 0rem 8rem 0rem;
+}
+
+
+/*************NAVBAR***************/
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    background-color: rgb(70, 69, 69);
+}
+
+.nav-logo {
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-item a {
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.25rem;
+}
+
+
+/*************FADE SECTION****************/
+
+.fade {
+    padding: 5rem 0rem;
+    width: 80%;
+    margin: auto;
+    /* background-color:burlywood; */
+}
+
+.fade-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0rem;
+    font-size: 1.25rem;
+    
+}
+
+.fade-container p {
+    padding: 0px 5rem;
+    width: 40%;
+    font-family: var(--font-secondary);
+}
+
+.fade-container img {
+    border-radius: 50%;
+}
+
+/****************SLIDE-IN SECTION****************/
+
+.slide {
+    padding: 5rem 0rem;
+    width: 80%;
+    margin: auto;
+    /* background-color:thistle; */
+}
+
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5rem 0rem;
+    font-size: 1.25rem;
+}
+
+.slide-container p {
+    padding: 0rem 5rem;
+    max-width: 40%;
+    font-family: var(--font-secondary);
+}
+
+.slide-container img {
+    border-radius: 50%;
+}
+
+
+/****************ANIMATION********************/
+
+.fade-out {
+    transition: opacity 500ms ease-in;
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.from-left {
+    transition: transform 500ms ease-in;   
+    transform: translateX(-50%); 
+}
+.from-right {
+    transition: transform 500ms ease-in;   
+    transform: translateX(50%);  
+}
+
+.slide-in {
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+

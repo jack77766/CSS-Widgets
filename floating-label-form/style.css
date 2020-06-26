@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*********** With Javascript ***************/
+
+.form1 {
+    margin: 5em 0;
+}
+
+.form1 .input-container1 {
+    position: relative;
+}
+
+.form1 .label1 {
+    position: absolute;
+    left: .25em;
+    transition: all 250ms ease-in;
+    /* transform-origin: top left; */
+}
+
+.label-norm {
+    color: rgb(63, 64, 65);
+    top: calc(100% / 2);
+    font-size: 1rem;
+}
+
+.label-top{
+    top: .25em;
+    font-weight: bold;
+    font-size: .75rem;
+    color: rgb(77, 102, 240);
+}
+
+.form1 .input1 {
+    font-size: 16px;
+    padding-top: 1.5em;
+    padding-left: .25em;;
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    background-color: rgba(236, 236, 236, 0.788);
+}
+/* .form1 {
+    margin: 5em 0;
+}
+
+.form1 .input-container1 {
+    position: relative;
+    margin: 1em;
+}
+
+.form1 .label1 {
+    position: absolute;
+    color: rgb(63, 64, 65);
+    top: calc(100% / 2);
+    left: .25em;
+    font-size: 1rem;
+    transition: all 250ms ease-in;
+}
+
+.form1 .input1:focus + .label1{
+    top: .25em;
+    font-weight: bold;
+    font-size: .75rem;
+    color: rgb(77, 102, 240);
+}
+
+.form1 .input1 {
+    font-size: 16px;
+    padding-top: 1.5em;
+    padding-left: .25em;;
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    background-color: rgba(236, 236, 236, 0.788);
+} */
+
+
+
+
+
+
+/*****************USING placeholder:shown******************
+***************doesn't work on IE and Edge*****************/
+
+
+.form2 {
+    margin: 5em 0;
+}
+
+.input2 {
+    font-size: 16px;
+    padding-top: 1.5em;
+    padding-left: .25em;;
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    background-color: rgba(236, 236, 236, 0.788);
+}
+
+.input-container2 {
+    position: relative;
+}
+ /*
+.input2:not(:placeholder-shown) .input-container::before{
+    content: 'label';
+    position: absolute;
+    attr(data-input); 
+    top: .25em;
+    left: .25em;
+    
+    font-weight: bold;
+    font-size: .75rem;
+}*/
+.label2 {
+    position: absolute;
+    left: 0.25em;
+    top: calc(100% /2);
+    transition: all 250ms ease-in;
+    transform-origin: top left;
+    /* transition: font-size 250ms ease-in; */
+    
+}
+
+
+.input2:not(:placeholder-shown) + span, .input2:focus + span {
+    transform : translateY(-150%);
+    font-size: 0.65em;
+    font-weight: bold;
+    color: rgb(77, 102, 240); 
+}
+
+.input2:not(::-ms-input-placeholder) + span {
+    transform : translateY(-150%);
+    font-size: 0.65em;
+    font-weight: bold;
+    color: rgb(77, 102, 240); 
+}
+
+
+/******************USING :valid & :invalid***************/
+/*********works on all browser when according webkits called********/
+
+
+
+.form3 {
+    margin: 5em 0;
+}
+
+.input3 {
+    font-size: 16px;
+    padding-top: 1.5em;
+    padding-left: .25em;;
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    background-color: rgba(236, 236, 236, 0.788);
+}
+
+.input-container3 {
+    position: relative;
+}
+
+.label3 {
+    position: absolute;
+    left: 0.25em;
+    top: calc(100% /2);
+    transition: all 250ms ease-in;
+    transform-origin: top left;
+
+}
+
+
+
+.input-container3 input:valid + span,
+.input3:focus + span{
+    color: blue;
+    top: 0.25em;
+    font-size: 0.65em;
+    font-weight: bold;
+    
+}
+
+
+
+/* .input-container3 input:invalid::placeholder {
+    opacity: 1;
+}
+.input-container3 input:valid::placeholder,
+.input-container3 input:focus::placeholder{
+    opacity: 0;
+} */
